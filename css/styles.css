@@ -1,12 +1,11 @@
 :root {
-  --color-bg: #E08119;
+  --color-bg: #e08119;
   --color-text: #333129;
   --color-text-light: #f8f402;
-  --color-primary: #E08119;
+  --color-primary: #e08119;
   --color-primary-light: #fade00;
   --color-secondary: #333129;
   --color-tertiary: #f9be00;
-
 
   --space-xs: 0.25rem;
   --space-sm: 0.5rem;
@@ -20,7 +19,6 @@
   --text-xl: clamp(2rem, 10vw, 4rem);
 
   --borderradius-sm: 12px;
-
 }
 
 * {
@@ -28,30 +26,71 @@
   padding: 0;
   box-sizing: border-box;
 }
-body{
-      min-width: 320px;
-      background-color: var(--color-tertiary);
+body {
+  min-width: 320px;
+  background-color: var(--color-tertiary);
 }
-header{
-    background-color: var(--color-bg);
-    padding: var(--space-sm);
-    font-size: var(--text-lg);    
-    font-weight: bold;
+header {
+  background-color: var(--color-bg);
+  padding: var(--space-sm);
+  font-size: var(--text-lg);
+  font-weight: bold;
+  border: 3px solid var(--color-text);
+  margin: var(--space-xs);
 }
-nav{
-    margin:var(--space-sm)
+nav {
+  margin: var(--space-sm);
 }
-a{
-    text-decoration: none;
-    color: var(--color-text);
-    border-radius: var(--borderradius-sm);
-    padding: var(--space-sm);
-    margin: var(--space-sm);
+a {
+  text-decoration: none;
+  color: var(--color-text);
+  border-radius: var(--borderradius-sm);
+  padding: var(--space-sm);
 }
-footer{
-      color: #333129;
+main {
+  margin: var(--space-sm);
+}
+h1 {
+  padding: var(--space-sm);
+}
+.squadList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.playerCard {
+  flex: 1 1 14rem;
+  max-width: 18rem;
+}
+.playerPic {
+  border: 3px solid;
   background-color: var(--color-primary);
+  border-top-left-radius: var(--borderradius-sm);
+  border-top-right-radius: var(--borderradius-sm);
+}
+.playerBio {
+  border-bottom: 3px solid;
+  border-left: 3px solid;
+  border-right: 3px solid;
+  border-bottom-left-radius: var(--borderradius-sm);
+  border-bottom-right-radius: var(--borderradius-sm);
+  padding: var(--space-sm);
+  background-color: var(--color-primary);
+}
+ul {
+  display: flex;
+  flex-direction: column;
+  padding-left: var(--space-lg);
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+footer {
+  color: #333129;
+  background-color: var(--color-bg);
   font-size: var(--text-sm);
   padding: var(--space-lg);
-margin-top: var(--space-sm);
+  margin-top: var(--space-sm);
 }
