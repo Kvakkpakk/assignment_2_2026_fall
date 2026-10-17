@@ -36,7 +36,8 @@ header {
   font-size: var(--text-lg);
   font-weight: bold;
   border: 3px solid var(--color-text);
-  margin: var(--space-xs);
+  margin: var(--space-sm);
+  border-radius: var(--borderradius-sm);
 }
 nav {
   margin: var(--space-sm);
@@ -60,8 +61,8 @@ h1 {
   gap: var(--space-sm);
 }
 .playerCard {
-  flex: 1 1 14rem;
-  max-width: 18rem;
+  flex: 0 0 14rem;
+  max-width: 18rem;  
 }
 .playerPic {
   border: 3px solid;
@@ -86,7 +87,7 @@ ul {
 img {
   display: block;
   max-width: 100%;
-  height: auto;
+        height: 14rem;
 }
 footer {
   color: #333129;
