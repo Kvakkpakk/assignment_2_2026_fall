@@ -28,10 +28,15 @@
   padding: 0;
   box-sizing: border-box;
 }
+body{
+      min-width: 320px;
+      background-color: var(--color-tertiary);
+}
 header{
     background-color: var(--color-bg);
     padding: var(--space-sm);
     font-size: var(--text-lg);    
+    font-weight: bold;
 }
 nav{
     margin:var(--space-sm)
@@ -42,4 +47,11 @@ a{
     border-radius: var(--borderradius-sm);
     padding: var(--space-sm);
     margin: var(--space-sm);
+}
+footer{
+      color: #333129;
+  background-color: var(--color-primary);
+  font-size: var(--text-sm);
+  padding: var(--space-lg);
+margin-top: var(--space-sm);
 }
