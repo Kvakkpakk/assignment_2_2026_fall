@@ -57,6 +57,7 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: var(--space-sm);
 }
 .playerCard {
   flex: 1 1 14rem;
